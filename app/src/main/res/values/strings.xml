@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Actividad_07_Reserva_de_Citas_Médicas</string>
+    <string name="app_title">Reservas de Citas Médicas</string>
+    <string name="button_next">Siguiente</string>
+</resources>
