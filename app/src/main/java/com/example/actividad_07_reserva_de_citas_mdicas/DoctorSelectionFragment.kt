@@ -10,18 +10,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 /*
-La clase "DoctorSelectionFragment" es un Fragmento que muestra una lista de doctores para que el usuario seleccione uno para su cita médica.
+La clase "DoctorSelectionFragment" es un Fragmento que muestra una lista de doctores para que el usuario seleccione uno para su cita médica (1° Vista).
 
 - Define una lista de doctores (doctorList) con diferentes nombres, especialidades y disponibilidades.
 - Utiliza un "RecyclerView" para mostrar la lista de doctores en un formato de lista vertical, utilizando un "LinearLayoutManager".
 - Asigna un adaptador (DoctorAdapter) para vincular los datos de los doctores con las vistas de cada ítem en el "RecyclerView".
 
   - Cuando un doctor es seleccionado (al hacer clic en un ítem), el doctor se guarda en el "SharedViewModel" a través de "setSelectedDoctor()".
-  - Después de seleccionar un doctor, el fragmento actual es reemplazado por "AppointmentDetailsFragment",
-  - y se añade la transacción a la pila de retroceso (BackStack).
+  - Después de seleccionar un doctor, el fragmento (vista) actual es reemplazado por "AppointmentDetailsFragment" (2° vista).
 
 - En el método "onViewCreated", se inicializa el "SharedViewModel", que permite compartir los datos del doctor seleccionado con otros
-- fragmentos de la aplicación.
+- fragmentos (vistas) de la aplicación.
 */
 
 class DoctorSelectionFragment : Fragment() {
