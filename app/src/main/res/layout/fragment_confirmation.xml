@@ -46,7 +46,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <!-- Botón para confirmar la cita -->
     <Button
         android:id="@+id/buttonConfirm"
         android:layout_width="wrap_content"
