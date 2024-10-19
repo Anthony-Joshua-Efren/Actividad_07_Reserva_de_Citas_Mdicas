@@ -15,15 +15,15 @@ import java.time.LocalTime
 import java.util.*
 
 /*
-Esta clase "AppointmentDetailsFragment" es un Fragmento de una aplicación de reserva de citas médicas.
+Esta clase "AppointmentDetailsFragment" es un Fragmento de la aplicación (2° vista).
 Su principal función es permitir al usuario seleccionar una fecha y hora para una cita con un médico.
 
-- Inicializa los elementos de la interfaz de usuario como un "DatePicker", un "TimePicker", y "TextViews" para mostrar el nombre
+- Inicializa los elementos de la interfaz de usuario de un "DatePicker", un "TimePicker", y "TextViews" para mostrar el nombre
 - y la especialidad del doctor seleccionado.
 - Usa "ViewModelProvider" para obtener una instancia del "SharedViewModel" que se utiliza para compartir datos entre fragmentos.
-- Observa el `LiveData` del médico seleccionado para actualizar los detalles del doctor en la interfaz cuando estos cambien.
-- Al pulsar el botón "Siguiente", obtiene la fecha y hora seleccionadas, las guarda en el ViewModel, y navega al siguiente
-- fragmento de confirmación de la cita.
+- Observa el "LiveData" del médico seleccionado para actualizar los detalles del doctor en la interfaz cuando estos cambien.
+- Al pulsar el botón "Siguiente", obtiene la fecha y hora seleccionadas, las guarda en el ViewModel, y pasa al siguiente
+- fragmento de confirmación de la cita (3° vista).
 */
 
 class AppointmentDetailsFragment : Fragment() {
@@ -43,8 +43,6 @@ class AppointmentDetailsFragment : Fragment() {
         timePicker = view.findViewById(R.id.timePicker)
         doctorNameTextView = view.findViewById(R.id.doctorNameTextView)
         doctorSpecialtyTextView = view.findViewById(R.id.doctorSpecialtyTextView)
-
-        Locale.setDefault(Locale("es", "MX"))
 
         viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
         viewModel.selectedDoctor.observe(viewLifecycleOwner) { doctor ->
