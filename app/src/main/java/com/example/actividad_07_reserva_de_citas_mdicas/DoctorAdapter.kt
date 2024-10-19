@@ -9,10 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 /*
 La clase "DoctorAdapter" es un adaptador personalizado para gestionar una lista de doctores en un "RecyclerView".
 
-- Toma una lista de objetos "Doctor" (doctorList) y una función lambda (onDoctorSelected) que se ejecuta cuando un doctor es seleccionado
-- por el usuario.
+- Toma una lista de objetos "Doctor" (doctorList) y una función (onDoctorSelected) que se ejecuta cuando un doctor es seleccionado por el usuario.
 - Dentro de la clase "DoctorViewHolder", se definen tres "TextViews" para mostrar el nombre, la especialidad y la disponibilidad del doctor.
-- El método "onCreateViewHolder" infla el diseño de un ítem de doctor (item_doctor.xml) y crea un "DoctorViewHolder".
+- El método "onCreateViewHolder" llena el diseño de un ítem de doctor (item_doctor.xml) y crea un "DoctorViewHolder".
 - El método "onBindViewHolder" vincula los datos de un doctor específico a los "TextViews" en cada posición de la lista.
 - Al hacer clic en un ítem, se llama a la función "onDoctorSelected", pasando el doctor seleccionado.
 - El método "getItemCount" devuelve el tamaño de la lista de doctores.
