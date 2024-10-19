@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 
 /*
-La clase "ConfirmationFragment" es un Fragmento que muestra una pantalla de confirmación para una cita médica previamente seleccionada.
+La clase "ConfirmationFragment" es un Fragmento que muestra una pantalla de confirmación para una cita médica previamente seleccionada (3° vista).
 
 - Utiliza un "SharedViewModel" para acceder a los datos compartidos entre fragmentos, como el nombre del doctor, su especialidad,
 - la fecha y la hora de la cita.
-- Recupera y muestra en la interfaz de usuario la información de la cita:
+- Trae los datos y muestra en la interfaz de usuario la información de la cita:
 
   - El nombre y la especialidad del doctor seleccionados.
   - La fecha y la hora elegidas para la cita.
