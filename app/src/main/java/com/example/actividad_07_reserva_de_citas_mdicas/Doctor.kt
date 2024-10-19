@@ -1,13 +1,13 @@
 package com.example.actividad_07_reserva_de_citas_mdicas
 
 /*
-La clase "Doctor" es un "data class" que representa a un doctor en el sistema de reservas de citas médicas.
+La clase "Doctor" de tipo "data" representa a un doctor en la aplicación.
 
-- Define tres propiedades:
+- Define tres características:
 
-  - Nombre: el nombre del doctor.
-  - Especialidad: la especialidad médica del doctor.
-  - Disponibilidad: una cadena que representa los horarios o días en los que el doctor está disponible para citas.
+  - Nombre.
+  - Especialidad.
+  - Disponibilidad.
 
 */
 
