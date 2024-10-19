@@ -9,16 +9,16 @@ import java.time.LocalTime
 /*
 La clase "SharedViewModel" es un ViewModel que se utiliza para compartir datos entre diferentes fragmentos de la aplicación.
 
-- Utiliza "MutableLiveData" y "LiveData" para almacenar y observar datos:
+- Utiliza "MutableLiveData" y "LiveData" para almacenar y visualizar datos:
 
-  - "_selectedDoctor" es un "MutableLiveData" que guarda el doctor seleccionado, mientras que "selectedDoctor" es la versión pública como "LiveData".
-  - "_appointmentDate" es un "MutableLiveData" que almacena la fecha de la cita seleccionada, mientras que "appointmentDate" es su versión observable.
-  - "_appointmentTime" es un "MutableLiveData" que guarda la hora de la cita, y "appointmentTime" es su versión pública.
+  - "_selectedDoctor" es un "MutableLiveData" que guarda el doctor seleccionado.
+  - "_appointmentDate" es un "MutableLiveData" que almacena la fecha de la cita seleccionada.
+  - "_appointmentTime" es un "MutableLiveData" que guarda la hora de la cita.
 
 - Los métodos "setSelectedDoctor(doctor: Doctor)" y "setAppointmentDateTime(date: LocalDate, time: LocalTime)"
 - permiten actualizar el doctor seleccionado, así como la fecha y hora de la cita, respectivamente.
 
-Este ViewModel permite compartir estos datos entre los fragmentos de la aplicación de forma reactiva y centralizada.
+Este ViewModel permite compartir estos datos entre los fragmentos (vistas) de la aplicación de forma reactiva y centralizada.
 */
 
 class SharedViewModel : ViewModel()
